@@ -13,7 +13,7 @@ If you are developing a production application, we recommend using TypeScript an
 
 ## Core ReactJs interview Question
 
-Q1. What is ReactJs?
+Q1. What is ReactJs.
 A1. React (jo React.js ya ReactJS ke naam se bhi jana jata hai) ek open-source front-end JavaScript library hai jo user interfaces (UI) banane ke liye use hoti hai, khas kar single-page applications (SPA) ke liye.
 
 Iska use web aur mobile apps ke view layer ko handle karne ke liye hota hai. React component-based aur declarative approach follow karta hai, jisme hum chhote-chhote reusable components banate hain jo milkar ek complete UI tayar karte hain.
