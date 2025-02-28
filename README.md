@@ -26,7 +26,19 @@ React me declarative programming ka matlab hai ki hum directly bata dete hain ki
 🔹 Example:
 Agar hume React me ek button dikhana hai, toh hum sirf yeh likhenge ki button ka text kya hoga, React khud usko render karega aur update bhi karega.
 code:
+
+
 function App() {
   return <button>Click Me</button>;
 }
+
+Q3. JSX?
+
+
+✅ Answer:
+JSX ek JavaScript ka extension hai jo React me HTML-like syntax likhne ki suvidha deta hai.
+
+#Yeh JavaScript aur HTML ka mixture hai.
+#Yeh React ke andar UI components ko define karne me madad karta hai.
+#JSX code Babel compiler ke through pure JavaScript me convert hota hai.
 
