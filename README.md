@@ -242,3 +242,39 @@ Socho tumhare paas ek custom button component hai jo ek unique style aur behavio
 💡 Shadow DOM exactly yehi karta hai – ek isolated scope banata hai!
 
 Basically , Shadow DOM ek isolated DOM tree hai jo outer DOM se independent hai. Isme CSS, JavaScript , main ye conflict se bachta hai, ek isolated room ke taraf hota h.
+
+🔥 React Fiber Kya Hota Hai? – Full Depth Samajho! 🚀
+📌 Introduction – React Fiber Kya Hai?
+✅ React Fiber ek naya reconciliation algorithm hai jo React 16 se introduce kiya gaya tha.
+✅ Iska main goal React applications ki performance aur responsiveness improve karna hai.
+✅ Fiber ka focus UI updates ko zyada smooth aur efficiently handle karna hai.
+✅ React ke purane algorithm (React Stack) ka replacement hai jo zyada efficient rendering aur background updates allow karta hai.
+
+❓ Q1: React Fiber kya hai?
+✅ Answer:
+React Fiber React ka naya rendering engine hai jo UI updates ko efficiently handle karta hai.
+Iska goal performance optimization aur concurrent rendering ko support karna hai.
+
+❓ Q2: React Fiber aur purane React Stack me kya difference hai?
+✅ Answer:
+
+React Fiber asynchronous rendering allow karta hai, jabki purana React synchronous rendering karta tha.
+Fiber update priorities ko manage karta hai, purane React me sab updates same priority ke hote the.
+Fiber me UI animations aur lag-free interactions better hain.
+
+❓ Q1: React me Controlled aur Uncontrolled Components me kya difference hai?
+✅ Answer:
+
+Controlled Components React ke state se manage hote hain, jabki Uncontrolled Components ka data direct DOM me hota hai.
+Controlled Components ka data change hone par React UI update hoti hai, Uncontrolled Components me data manually retrieve hota hai (useRef).
+
+❓ Q2: React me Controlled Components kab use karna chahiye?
+✅ Answer:
+
+Jab hume form validation karni ho ya real-time updates chahiye ho.
+Jab form ke input values React state ke basis par dynamically update karni ho.
+❓ Q3: Uncontrolled Components kab use karna chahiye?
+✅ Answer:
+
+Jab performance important ho aur large number of form inputs ho.
+Jab hume DOM ka direct access chahiye ho, jaise file uploads ya third-party form handling.
