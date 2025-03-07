@@ -241,4 +241,4 @@ Socho tumhare paas ek custom button component hai jo ek unique style aur behavio
 
 💡 Shadow DOM exactly yehi karta hai – ek isolated scope banata hai!
 
-Basically
+Basically , Shadow DOM ek isolated DOM tree hai jo outer DOM se independent hai. Isme CSS, JavaScript , main ye conflict se bachta hai, ek isolated room ke taraf hota h.
