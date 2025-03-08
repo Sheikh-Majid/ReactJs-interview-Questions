@@ -6,6 +6,7 @@ import Message from './components/Message';
 import { Demo } from './components/Demo';
 import Appp from './components/Appp';
 import InlineExpression from './components/InlineExpression';
+import ControlledForm from './components/ControlledComop';
 
 function App() {
  
@@ -55,7 +56,8 @@ const [count, setCount] = useState(0);
       <Message Messagee={text} /> */}
       {/* <Demo/> */}
       {/* <Appp/> */}
-      <InlineExpression/>
+      {/* <InlineExpression/> */}
+      <ControlledForm/>
 
     </>
   )

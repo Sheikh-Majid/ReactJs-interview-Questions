@@ -278,3 +278,10 @@ Jab form ke input values React state ke basis par dynamically update karni ho.
 
 Jab performance important ho aur large number of form inputs ho.
 Jab hume DOM ka direct access chahiye ho, jaise file uploads ya third-party form handling.
+
+
+❓ Q1: useRef aur useState me kya difference hai?
+✅ Answer:
+
+useRef ka value change hone par component re-render nahi hota, jabki useState ka value change hone par re-render hota hai.
+useRef DOM elements ko directly access karne ke liye use hota hai, jabki useState UI update ke liye hota hai.
