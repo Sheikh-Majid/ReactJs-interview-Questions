@@ -285,3 +285,43 @@ Jab hume DOM ka direct access chahiye ho, jaise file uploads ya third-party form
 
 useRef ka value change hone par component re-render nahi hota, jabki useState ka value change hone par re-render hota hai.
 useRef DOM elements ko directly access karne ke liye use hota hai, jabki useState UI update ke liye hota hai.
+
+<!-- Virtual Dom -->
+<!-- 🗝️ Bonus Tip – key ka role:
+key prop bahut important hota hai React ko batane ke liye ki kaunsa item same hai ya new.
+
+Agar key sahi doge (jaise item.id), to reconciliation correctly hoga.
+
+Galat key (jaise index) doge to React confuse ho sakta hai. -->
+
+Q: Why do we use className instead of class in React?
+A: In React, JSX is converted to JavaScript, and class is a reserved keyword in JavaScript. To avoid conflicts and ensure proper element styling, React uses className instead.
+
+React internally uses JavaScript to build the UI.
+JSX is not HTML — it's a JavaScript syntax extension that looks like HTML.
+In JSX, attributes like class, for, etc., can cause conflicts:
+class → className
+for → htmlFor
+
+What are Fragments in React?
+Fragments in React allow you to group multiple elements without adding extra nodes to the DOM.
+
+Normally, React components must return a single parent element, lekin agar tum multiple sibling elements return karna chaaho, toh bina kisi unnecessary <div> ke, Fragments ka use karte ho.
+Note:
+Fragments are a bit faster and use less memory by not creating an extra DOM node. This only has a real benefit on very large and deep trees.
+
+Q: What are React Portals and why do we use them?
+A: React Portals allow us to render components outside the main React root node. They are useful for UI elements like modals, dropdowns, or tooltips where we want to avoid parent CSS conflicts (like overflow or z-index). They maintain React's event bubbling and reactivity even though rendered elsewhere in the DOM.
+
+Q: Advantage of react?
+Ans: 1. In everything is a base of components based architecture, Which is use multiple place in the project
+2. React use Virtual Dom, Which is optimizing the performance of application.
+3. One way data binding (parent to child) which is predicable and easy to debug.
+4. strong community
+5. JSX make the easy read and write.
+
+Q: DisAdvantage of react?
+Ans: 
+1. No routing Availabe in raect . need to install third party library.
+2. SEO Problem due client side rendering (need nextjs to improve SEO)
+3. can we confused for newlearner.
