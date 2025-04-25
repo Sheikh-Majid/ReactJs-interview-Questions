@@ -325,3 +325,18 @@ Ans:
 1. No routing Availabe in raect . need to install third party library.
 2. SEO Problem due client side rendering (need nextjs to improve SEO)
 3. can we confused for newlearner.
+
+Q: Style in Reactjs
+Ans:
+1. inline style css >>> which is written in form of javascript object
+2. import form css written in another file
+3. or we can use different type of framworks
+
+Q: How are events handled differently in React compared to HTML?
+Answer:
+“React uses SyntheticEvent instead of native DOM events. Event names are written in camelCase, and we pass functions directly, not strings. SyntheticEvent helps React manage events consistently across browsers and improves performance.”
+1. onClick()  >> button click
+2. onChange()  >> handle input
+3. onSubmit()  >> Form handle
+
+
