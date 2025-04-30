@@ -7,6 +7,8 @@ import { Demo } from './components/Demo';
 import Appp from './components/Appp';
 import InlineExpression from './components/InlineExpression';
 import ControlledForm from './components/ControlledComop';
+import CounterList from './components/CounterList';
+import SwitchStatement from './components/SwitchStatement';
 
 function App() {
  
@@ -47,6 +49,8 @@ const [count, setCount] = useState(0);
   
    const text ="Mai bar bar render nhi hunga"
 
+  
+  const[Role, setrole] = useState('admin');
   return (
     <>
       <h1>Hello ReactJs...</h1>
@@ -57,7 +61,14 @@ const [count, setCount] = useState(0);
       {/* <Demo/> */}
       {/* <Appp/> */}
       {/* <InlineExpression/> */}
-      <ControlledForm/>
+      {/* <ControlledForm/> */}
+      {/* <CounterList/> */}
+      <input
+        type='text'
+        value={Role}
+        onChange={(e) => setrole(e.target.value)}
+      />
+      <SwitchStatement role={Role}/>
 
     </>
   )

@@ -332,6 +332,7 @@ Ans:
 2. import form css written in another file
 3. or we can use different type of framworks
 
+Day: Tuesday>>>
 Q: How are events handled differently in React compared to HTML?
 Answer:
 “React uses SyntheticEvent instead of native DOM events. Event names are written in camelCase, and we pass functions directly, not strings. SyntheticEvent helps React manage events consistently across browsers and improves performance.”
@@ -339,4 +340,18 @@ Answer:
 2. onChange()  >> handle input
 3. onSubmit()  >> Form handle
 
+Day: Wednesday>>>
+Q: What is the impact of indexes as keys?
+Ans: "Using index as a key is risky because it can cause bugs when the list changes dynamically. React uses keys to track components, and if index changes due to item addition or deletion, it may update the wrong component."
+
+
+Q: Condentional Rendering of component in reactjs
+Ans: Various ways to condentional rendering of react component ko
+1. if/else
+2. ternery operatore  condition ? (true):(false);
+3. logical operator   (jb sirf true value show karna ho)  , {condition && (<p>Ye render kr do Please</p>)}
+4. Switch case (like role base)
+
+Q: Kb koun sa use kare?
+Ans: “Main React me conditional rendering ka selection readability, condition complexity aur maintainability ke base pe karta hoon — jahan simple condition ho wahan ternary ya &&, aur complex logic ke liye if/else ya switch.”
 
