@@ -355,3 +355,35 @@ Ans: Various ways to condentional rendering of react component ko
 Q: Kb koun sa use kare?
 Ans: “Main React me conditional rendering ka selection readability, condition complexity aur maintainability ke base pe karta hoon — jahan simple condition ho wahan ternary ya &&, aur complex logic ke liye if/else ya switch.”
 
+<!-- Thursday -->
+Q: Why we need to be careful when spreading props on DOM elements?
+Ans: “to avoid unnecessary attributes, warnings, and maintain clean DOM, we carefully spread only valid props.”
+
+Q:How do you memoize a component?
+Ans: Memoize is a higher order components , which is wrape the components and Props and if there is same props It will avoid to re-render.
+1. It helps in performance optimizing 
+2. When compenent render continoulys with same props , then it helpfull for that
+3. when components is expensive render and complex calculation.
+
+
+🌟 What is React production mode?
+By default, jab hum React app npm start se chalate hain, wo development mode me chalta hai:
+✅ Extra warnings
+✅ Error messages
+✅ Slow performance (kyunki debugging tools active hote hain)
+
+But production mode me: ✅ Warnings & dev-only checks remove ho jate hain
+✅ Code minify & optimize hota hai
+✅ Performance better hoti hai
+✅ Bundle size chhoti ho jati hai
+
+when we run npm run build react auto matically detect production environment and disible and development environmnet . this ensure the better performance and reduce the size of bundle, then  we server static file to the srever. build folder has static and minimize code html, css and js code.
+
+Q: Why React requires capitalized component names:
+Ans: <div> and <input/> react isse build in dom elemnt samata
+>> Start with Capital letter react isse samajt Custom components. like <MyCompoent/>
+
+React looks at the first letter of the element:
+
+If the first letter is lowercase, React assumes it’s a built-in DOM element like <div>, <span>, etc.
+If the first letter is uppercase, React assumes it’s a custom component and tries to render it accordingly.
