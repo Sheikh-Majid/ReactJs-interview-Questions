@@ -387,3 +387,35 @@ React looks at the first letter of the element:
 
 If the first letter is lowercase, React assumes it’s a built-in DOM element like <div>, <span>, etc.
 If the first letter is uppercase, React assumes it’s a custom component and tries to render it accordingly.
+
+<!-- Sunday 4-5-25 -->
+Q: Switching Component in React — kya hota hai?
+Ans: Switching component is a component who decide who child component view and render based on the certain condition like state , props etc
+Example:
+function App({ page }) {
+  if (page === 'home') {
+    return <Home />;
+  } else if (page === 'about') {
+    return <About />;
+  } else if (page === 'contact') {
+    return <Contact />;
+  } else {
+    return <NotFound />;
+  }
+}
+
+Real example React-router dom
+<Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+</Routes>
+
+💬 Interview me kaise explain karein?
+A switching component in React is a component that decides which child component or view to render based on certain conditions like props, state, or routes. This pattern helps manage dynamic UI rendering and improves code readability by centralizing the control logic.
+
+Q: What is the difference between React and ReactDOM?
+Ans: 💡 Interview perspective
+Tumhe batana hoga ki React aur ReactDOM alag packages hain aur ek dusre par depend karte hain.
+React ka kaam hai logic aur components, ReactDOM ka kaam hai render karna.
+React sirf web me nahi, React Native (mobile) me bhi kaam karta hai — waha ReactDOM nahi lagta, waha ReactNative ka renderer lagta hai.

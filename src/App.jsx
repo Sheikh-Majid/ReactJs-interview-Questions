@@ -11,6 +11,7 @@ import CounterList from './components/CounterList';
 import SwitchStatement from './components/SwitchStatement';
 import CustomButton from './components/CustomButton';
 import MemoCompoenents from './components/MemoCompoenents';
+import SwitchingComponents from './components/SwitchingComponents';
 
 function App() {
  
@@ -55,6 +56,7 @@ const [count, setCount] = useState(0);
   const [Role, setrole] = useState('admin');
   const[name, setName] = useState('');
   const [age, setAge] = useState();
+  const [page, setPage] = useState('');
 
   return (
     <>
@@ -80,7 +82,7 @@ const [count, setCount] = useState(0);
         anotherProp="test"
       /> */}
 
-      <input
+      {/* <input
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
@@ -98,7 +100,17 @@ const [count, setCount] = useState(0);
       <br />
       
       <h1 style={{ marginTop: '10px', padding: '10px', borderRadius: '5px', border: '1px solid black' }}>Age: {age}</h1>
-      <MemoCompoenents name={"Shaikh"}  />
+      <MemoCompoenents name={"Shaikh"}  /> */}
+
+      <input
+        type="text"
+        value={page}
+        onChange={(e) => setPage(e.target.value)}
+        placeholder='Enter your Page Name'
+          style={{ marginTop: '10px' , padding: '10px' , borderRadius: '5px' , border: '1px solid black'}}
+      />
+
+      <SwitchingComponents page={page}/>
     </>
   );
 }
